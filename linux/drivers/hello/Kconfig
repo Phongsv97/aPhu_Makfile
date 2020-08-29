@@ -1,0 +1,10 @@
+menu hello-world
+
+config	HELLO_WORLD
+	tristate hello-kernel
+	depends on ARM
+	default y if ARM
+	help
+		Select this option to run HelloWorld Kernel Modules!
+
+endmenu
